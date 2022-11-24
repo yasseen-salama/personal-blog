@@ -2,7 +2,7 @@
 import { jsx, Link } from "theme-ui"
 
 const Footer = () => {
-  const siteTitle  =  "Yasseen Salamaaaa";
+  const siteTitle  =  "Yasseen Salama";
 
   return (
     <footer
