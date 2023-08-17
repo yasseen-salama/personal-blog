@@ -57,9 +57,10 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-plugin-sitemap`,
+      resolve: `gatsby-source-filesystem`,
       options: {
-        output: `/`,
+        name: `src`,
+        path: `${__dirname}/src/`,
       },
     },
     {
@@ -88,6 +89,28 @@ module.exports = {
         ],
       },
     },
+    {
+      resolve: `gatsby-plugin-sitemap`,
+      options: {
+        query: `
+          {
+            site {
+              siteMetadata {
+                siteUrl
+              }
+            }
+            allSitePage {
+              nodes {
+                path
+              }
+            }
+          }
+        `,
+        resolveSiteUrl: ({ site }) => site.siteMetadata.siteUrl,
+        resolvePages: ({ allSitePage }) => allSitePage.nodes.map(page => ({ ...page, url: page.path })),
+      }
+    },
+         
     {
       resolve: `gatsby-plugin-feed`,
       options: {
