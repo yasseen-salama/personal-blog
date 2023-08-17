@@ -14,7 +14,7 @@ module.exports = {
     siteTitleAlt: `Yasseen Salama`,
     siteHeadline: `Yasseen Salama`,
     siteUrl: `https://yasseensalama.com`,
-    siteDescription: `Personal website of Yasseen Salma. Projects, thoughts, writings and other stuff.`,
+    siteDescription: `Personal website of Yasseen Salama. Projects, thoughts, writings and other stuff.`,
     siteImage: `/banner.jpg`,
     author: `@yasseen_salama`,
   },
