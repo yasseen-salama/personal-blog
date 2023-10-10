@@ -26,6 +26,10 @@ module.exports = {
       options: {},
     },
     {
+      resolve: `gatsby-plugin-netlify`,
+      options: {},
+    },
+    {
       resolve: `gatsby-transformer-remark`,
       options: {
         plugins: [`gatsby-remark-responsive-iframe`],
@@ -76,7 +80,7 @@ module.exports = {
         // https://css-tricks.com/meta-theme-color-and-trickery/
         // theme_color: `#6B46C1`,
         display: `standalone`,
-        "icon": "\emoji.png",
+        icon: "/emoji.png",
       },
     },
     {
