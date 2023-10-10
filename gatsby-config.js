@@ -16,6 +16,7 @@ module.exports = {
     siteUrl: `https://yasseensalama.com`,
     siteDescription: `Personal website of Yasseen Salama. Projects, thoughts, writings and other stuff.`,
     siteImage: `/banner.jpg`,
+    siteLanguage: `en`, 
     author: `@yasseen_salama`,
   },
   trailingSlash: `never`,
@@ -75,18 +76,7 @@ module.exports = {
         // https://css-tricks.com/meta-theme-color-and-trickery/
         // theme_color: `#6B46C1`,
         display: `standalone`,
-        icons: [
-          {
-            src: `/android-chrome-192x192.png`,
-            sizes: `192x192`,
-            type: `image/png`,
-          },
-          {
-            src: `/android-chrome-512x512.png`,
-            sizes: `512x512`,
-            type: `image/png`,
-          },
-        ],
+        "icon": "\emoji.png",
       },
     },
     {
