@@ -30,6 +30,10 @@ module.exports = {
       options: {},
     },
     {
+      resolve: `gatsby-plugin-typescript`,
+      options: {},
+    },
+    {
       resolve: `gatsby-transformer-remark`,
       options: {
         plugins: [`gatsby-remark-responsive-iframe`],
