@@ -52,10 +52,14 @@ module.exports = {
             title: `About`,
             slug: `/about`,
           },
+          {
+            title: `Pictures`,
+            slug: `/pictures`,
+          },
         ],
         externalLinks: [
           {
-            name: `Twitter`,
+            name: `X`,
             url: `https://twitter.com/yasseen_salama`,
           },
           {
