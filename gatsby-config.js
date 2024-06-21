@@ -53,8 +53,8 @@ module.exports = {
             slug: `/about`,
           },
           {
-            title: `Pictures`,
-            slug: `/pictures`,
+            title: `Gallery`,
+            slug: `/gallery`,
           },
         ],
         externalLinks: [
