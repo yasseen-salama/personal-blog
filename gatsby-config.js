@@ -60,10 +60,10 @@ module.exports = {
         externalLinks: [
           {
             name: `X`,
-            url: `https://twitter.com/yasseen_salama`,
+            url: `https://x.com/yasseen_salama`,
           },
           {
-            name: `Homepage`,
+            name: `Homes`,
             url: `https://www.yasseensalama.com`,
           },
         ],
