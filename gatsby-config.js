@@ -63,7 +63,7 @@ module.exports = {
             url: `https://x.com/yasseen_salama`,
           },
           {
-            name: `Homes`,
+            name: `Home`,
             url: `https://www.yasseensalama.com`,
           },
         ],
