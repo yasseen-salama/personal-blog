@@ -62,10 +62,6 @@ module.exports = {
             name: `X`,
             url: `https://x.com/yasseen_salama`,
           },
-          {
-            name: `Home`,
-            url: `https://www.yasseensalama.com`,
-          },
         ],
       },
     },
