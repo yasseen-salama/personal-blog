@@ -19,7 +19,7 @@ const config: GatsbyConfig = {
   },
   trailingSlash: `always`,
   plugins: [
-    {
+    {      
       resolve: `@lekoarts/gatsby-theme-minimal-blog`,
       // See the theme's README for all available options
       options: {
@@ -49,6 +49,35 @@ const config: GatsbyConfig = {
       resolve: `gatsby-plugin-sitemap`,
       options: {
         output: `/`,
+      },
+    },
+    {
+      resolve: `gatsby-plugin-mdx-embed`,
+      options: {
+      },
+    },
+    {
+      resolve: `gatsby-plugin-twitter`,
+      options: {
+      },
+    },
+    {
+      resolve: `@lekoarts/gatsby-source-flickr`,
+      options: {
+        username: `yasseen.salama`,
+        api_key: `f476d2b971282c62e9c6250bfc752b14`,
+        endpoints: [
+          {
+            // Docs: https://www.flickr.com/services/api/flickr.photosets.getPhotos.html
+            method: `flickr.photosets.getPhotos`,
+            args: {
+              photoset_id: `123`,
+              // If you don't want to get the photoset from your Flickr account, you can pass the user_id of another user.
+              user_id: `123`,
+              extras: `geo,tags,owner_name`,
+            }
+          }
+        ],
       },
     },
     {
